@@ -2,7 +2,7 @@ Source: x11proto-xf86dga
 Section: x11
 Priority: optional
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Uploaders: David Nusinow <dnusinow@debian.org>, Andres Salomon <dilinger@debian.org>, Julien Cristau <jcristau@debian.org>
+Uploaders: David Nusinow <dnusinow@debian.org>, Andres Salomon <dilinger@debian.org>
 Build-Depends:
  debhelper (>= 5.0.0),
  automake,
@@ -13,6 +13,7 @@ Vcs-Browser: http://git.debian.org/?p=pkg-xorg/proto/x11proto-xf86dga.git
 
 Package: x11proto-xf86dga-dev
 Architecture: all
+Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}, x11proto-core-dev
 Breaks: libxxf86dga-dev (<< 2:1.0.99.1)
 Description: X11 Direct Graphics Access extension wire protocol
@@ -22,7 +23,5 @@ Description: X11 Direct Graphics Access extension wire protocol
  .
  More information about X.Org can be found at:
  <URL:http://www.X.org>
- <URL:http://xorg.freedesktop.org>
- <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
  .
  This package is built from the X.org xf86dgaproto proto module.
